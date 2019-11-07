@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6044D18EE28CDF9D52E55B0C /* Pods_VirtualServersMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B625D7FB07B9C1FB58EC7FD /* Pods_VirtualServersMaps.framework */; };
 		D9482D452371892E0015B918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D442371892E0015B918 /* AppDelegate.swift */; };
 		D9482D472371892E0015B918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D462371892E0015B918 /* SceneDelegate.swift */; };
 		D9482D492371892E0015B918 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D482371892E0015B918 /* ViewController.swift */; };
 		D9482D4C2371892E0015B918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4A2371892E0015B918 /* Main.storyboard */; };
 		D9482D4E237189340015B918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4D237189340015B918 /* Assets.xcassets */; };
 		D9482D51237189340015B918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4F237189340015B918 /* LaunchScreen.storyboard */; };
+		D9482D6023730CC80015B918 /* MapsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D5F23730CC80015B918 /* MapsApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21CF1023C3E778A30DD01B67 /* Pods-VirtualServersMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualServersMaps.release.xcconfig"; path = "Target Support Files/Pods-VirtualServersMaps/Pods-VirtualServersMaps.release.xcconfig"; sourceTree = "<group>"; };
+		3B625D7FB07B9C1FB58EC7FD /* Pods_VirtualServersMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualServersMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		976A5422DBD202892D630BF3 /* Pods-VirtualServersMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualServersMaps.debug.xcconfig"; path = "Target Support Files/Pods-VirtualServersMaps/Pods-VirtualServersMaps.debug.xcconfig"; sourceTree = "<group>"; };
 		D9482D412371892E0015B918 /* VirtualServersMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualServersMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9482D442371892E0015B918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9482D462371892E0015B918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D9482D4D237189340015B918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9482D50237189340015B918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9482D52237189340015B918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9482D5F23730CC80015B918 /* MapsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6044D18EE28CDF9D52E55B0C /* Pods_VirtualServersMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ECD00CEADAF5FE51B18CF05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				976A5422DBD202892D630BF3 /* Pods-VirtualServersMaps.debug.xcconfig */,
+				21CF1023C3E778A30DD01B67 /* Pods-VirtualServersMaps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2FCD0FE16EB4CFD72F6684B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B625D7FB07B9C1FB58EC7FD /* Pods_VirtualServersMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9482D382371892E0015B918 = {
 			isa = PBXGroup;
 			children = (
 				D9482D432371892E0015B918 /* VirtualServersMaps */,
 				D9482D422371892E0015B918 /* Products */,
+				0ECD00CEADAF5FE51B18CF05 /* Pods */,
+				2FCD0FE16EB4CFD72F6684B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,40 @@
 		D9482D432371892E0015B918 /* VirtualServersMaps */ = {
 			isa = PBXGroup;
 			children = (
+				D9482D5E23730C740015B918 /* Model */,
+				D9482D5D23730C660015B918 /* View */,
+				D9482D5C23730C5A0015B918 /* Presenter */,
 				D9482D442371892E0015B918 /* AppDelegate.swift */,
 				D9482D462371892E0015B918 /* SceneDelegate.swift */,
-				D9482D482371892E0015B918 /* ViewController.swift */,
-				D9482D4A2371892E0015B918 /* Main.storyboard */,
 				D9482D4D237189340015B918 /* Assets.xcassets */,
 				D9482D4F237189340015B918 /* LaunchScreen.storyboard */,
 				D9482D52237189340015B918 /* Info.plist */,
 			);
 			path = VirtualServersMaps;
+			sourceTree = "<group>";
+		};
+		D9482D5C23730C5A0015B918 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D9482D5F23730CC80015B918 /* MapsApi.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D9482D5D23730C660015B918 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9482D4A2371892E0015B918 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9482D5E23730C740015B918 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9482D482371892E0015B918 /* ViewController.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9482D55237189340015B918 /* Build configuration list for PBXNativeTarget "VirtualServersMaps" */;
 			buildPhases = (
+				8986EE65979B8A3B460FEC6E /* [CP] Check Pods Manifest.lock */,
 				D9482D3D2371892E0015B918 /* Sources */,
 				D9482D3E2371892E0015B918 /* Frameworks */,
 				D9482D3F2371892E0015B918 /* Resources */,
+				862FF0850E187949434C6336 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +186,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		862FF0850E187949434C6336 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirtualServersMaps/Pods-VirtualServersMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirtualServersMaps/Pods-VirtualServersMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VirtualServersMaps/Pods-VirtualServersMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8986EE65979B8A3B460FEC6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VirtualServersMaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9482D3D2371892E0015B918 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +236,7 @@
 				D9482D492371892E0015B918 /* ViewController.swift in Sources */,
 				D9482D452371892E0015B918 /* AppDelegate.swift in Sources */,
 				D9482D472371892E0015B918 /* SceneDelegate.swift in Sources */,
+				D9482D6023730CC80015B918 /* MapsApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +378,7 @@
 		};
 		D9482D56237189340015B918 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976A5422DBD202892D630BF3 /* Pods-VirtualServersMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +396,7 @@
 		};
 		D9482D57237189340015B918 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21CF1023C3E778A30DD01B67 /* Pods-VirtualServersMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
