@@ -14,7 +14,7 @@
 		D9482D4C2371892E0015B918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4A2371892E0015B918 /* Main.storyboard */; };
 		D9482D4E237189340015B918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4D237189340015B918 /* Assets.xcassets */; };
 		D9482D51237189340015B918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4F237189340015B918 /* LaunchScreen.storyboard */; };
-		D9482D6023730CC80015B918 /* MapsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D5F23730CC80015B918 /* MapsApi.swift */; };
+		D953083C2378576A00CE562C /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953083B2378576A00CE562C /* DataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		D9482D4D237189340015B918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9482D50237189340015B918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9482D52237189340015B918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9482D5F23730CC80015B918 /* MapsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsApi.swift; sourceTree = "<group>"; };
+		D953083B2378576A00CE562C /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,6 @@
 		D9482D5C23730C5A0015B918 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				D9482D5F23730CC80015B918 /* MapsApi.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -114,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D9482D482371892E0015B918 /* ViewController.swift */,
+				D953083B2378576A00CE562C /* DataBase.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,8 +235,8 @@
 			files = (
 				D9482D492371892E0015B918 /* ViewController.swift in Sources */,
 				D9482D452371892E0015B918 /* AppDelegate.swift in Sources */,
+				D953083C2378576A00CE562C /* DataBase.swift in Sources */,
 				D9482D472371892E0015B918 /* SceneDelegate.swift in Sources */,
-				D9482D6023730CC80015B918 /* MapsApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

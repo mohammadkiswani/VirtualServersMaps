@@ -15,30 +15,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJm-tM-VQr">
-                                <rect key="frame" x="64" y="753" width="286" height="51"/>
+                            <view contentMode="scaleToFill" restorationIdentifier="mnk,m" translatesAutoresizingMaskIntoConstraints="NO" id="OWH-D4-CCM">
+                                <rect key="frame" x="47.5" y="766" width="319" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0  problems need your attention" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U4-E1-D62">
+                                        <rect key="frame" x="50" y="10" width="219" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEc-So-ltp">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="38"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="286" id="sa4-33-mzd"/>
-                                    <constraint firstAttribute="height" constant="51" id="xd4-51-dob"/>
+                                    <constraint firstItem="9U4-E1-D62" firstAttribute="centerY" secondItem="OWH-D4-CCM" secondAttribute="centerY" id="5hs-TX-II8"/>
+                                    <constraint firstAttribute="trailing" secondItem="DEc-So-ltp" secondAttribute="trailing" id="GFP-NK-fdk"/>
+                                    <constraint firstAttribute="height" constant="38" id="IJ8-YP-lbf"/>
+                                    <constraint firstItem="DEc-So-ltp" firstAttribute="leading" secondItem="OWH-D4-CCM" secondAttribute="leading" id="OFL-CV-b4g"/>
+                                    <constraint firstItem="DEc-So-ltp" firstAttribute="top" secondItem="OWH-D4-CCM" secondAttribute="top" id="TH1-Wf-sgE"/>
+                                    <constraint firstAttribute="bottom" secondItem="DEc-So-ltp" secondAttribute="bottom" id="h4t-Ki-1CX"/>
+                                    <constraint firstAttribute="width" constant="319" id="i3y-T8-zqB"/>
+                                    <constraint firstItem="9U4-E1-D62" firstAttribute="centerX" secondItem="OWH-D4-CCM" secondAttribute="centerX" id="sYD-y1-2Sy"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wJm-tM-VQr" secondAttribute="bottom" constant="9" id="0SE-DS-ccT"/>
-                            <constraint firstItem="wJm-tM-VQr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="709" id="CsE-ko-5xH"/>
-                            <constraint firstItem="wJm-tM-VQr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="X7H-dT-KsW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wJm-tM-VQr" secondAttribute="trailing" constant="64" id="bii-5s-4yc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OWH-D4-CCM" secondAttribute="bottom" constant="9" id="UiN-Gc-EAH"/>
+                            <constraint firstItem="OWH-D4-CCM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XbW-VV-nXn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Maps" image="maps111" selectedImage="maps111" id="o8Q-xS-4zy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="DEc-So-ltp" id="6aP-UF-mkc"/>
+                        <outlet property="redView" destination="OWH-D4-CCM" id="pDQ-94-iJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="280" y="219"/>
+            <point key="canvasLocation" x="279.71014492753625" y="218.97321428571428"/>
         </scene>
         <!--All Node-->
         <scene sceneID="N7G-PX-IIQ">
