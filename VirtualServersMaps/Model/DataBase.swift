@@ -9,6 +9,8 @@
 import Foundation
 
 final class informationArraySection {
+    
+    //    Mark: Helper
     var latitude : Double
     var longitude : Double
     var title : String

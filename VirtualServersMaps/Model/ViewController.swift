@@ -8,10 +8,17 @@ import GoogleMaps
 
 final class ViewController: UIViewController {
     
+    //    Mark: IBOutlet
+    
     @IBOutlet private weak var mapView: UIView!
     @IBOutlet private weak var redView: UILabel!
     
+    
+    
+    //    Mark: Variable
     var mapView1: GMSMapView?
+    
+    //    Mark: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +27,7 @@ final class ViewController: UIViewController {
         
         redView.layer.cornerRadius = redView.frame.size.height / 2
         redView.layer.zPosition = 0
-
+        
         mapView1 = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView1
         
@@ -30,7 +37,7 @@ final class ViewController: UIViewController {
             informationArraySection(latitude: 44.361919, longitude: -72.679436, title: "Washington County") ,
             informationArraySection (latitude: 44.979765, longitude: -69.077263, title: "nasmkxz") ,
             informationArraySection(latitude: 35.332247, longitude: -119.083392, title: "Los Angeles") ]
-
+        
         for item in markerArray {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
