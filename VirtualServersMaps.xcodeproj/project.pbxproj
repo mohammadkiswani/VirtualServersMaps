@@ -15,6 +15,8 @@
 		D9482D4E237189340015B918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4D237189340015B918 /* Assets.xcassets */; };
 		D9482D51237189340015B918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4F237189340015B918 /* LaunchScreen.storyboard */; };
 		D953083C2378576A00CE562C /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953083B2378576A00CE562C /* DataBase.swift */; };
+		D9A15F5F23796D2800687EB0 /* GreenIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A15F5E23796D2800687EB0 /* GreenIcon.xib */; };
+		D9A15F6123796E1F00687EB0 /* GreenIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A15F6023796E1F00687EB0 /* GreenIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		D9482D50237189340015B918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9482D52237189340015B918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D953083B2378576A00CE562C /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		D9A15F5E23796D2800687EB0 /* GreenIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreenIcon.xib; sourceTree = "<group>"; };
+		D9A15F6023796E1F00687EB0 /* GreenIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D9482D4A2371892E0015B918 /* Main.storyboard */,
+				D9A15F5E23796D2800687EB0 /* GreenIcon.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			children = (
 				D9482D482371892E0015B918 /* ViewController.swift */,
 				D953083B2378576A00CE562C /* DataBase.swift */,
+				D9A15F6023796E1F00687EB0 /* GreenIcon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +186,7 @@
 			files = (
 				D9482D51237189340015B918 /* LaunchScreen.storyboard in Resources */,
 				D9482D4E237189340015B918 /* Assets.xcassets in Resources */,
+				D9A15F5F23796D2800687EB0 /* GreenIcon.xib in Resources */,
 				D9482D4C2371892E0015B918 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +242,7 @@
 			files = (
 				D9482D492371892E0015B918 /* ViewController.swift in Sources */,
 				D9482D452371892E0015B918 /* AppDelegate.swift in Sources */,
+				D9A15F6123796E1F00687EB0 /* GreenIcon.swift in Sources */,
 				D953083C2378576A00CE562C /* DataBase.swift in Sources */,
 				D9482D472371892E0015B918 /* SceneDelegate.swift in Sources */,
 			);
