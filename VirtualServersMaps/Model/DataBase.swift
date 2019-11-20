@@ -19,6 +19,5 @@ final class informationArraySection {
         self.latitude = latitude
         self.longitude = longitude
         self.title = title
-        
     }
 }

@@ -8,24 +8,21 @@
 
 import UIKit
 
-class GreenIcon: UIView {
-
-    @IBOutlet weak var zerooLAbel: UILabel!
+final class GreenIcon: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
+        print("Green Icon")
     }
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         commonInit()
     }
-    
     private func commonInit() {
         guard let view = UINib(nibName: "GreenIcon", bundle: nil).instantiate(withOwner: nil, options: nil).first as? UIView else {
             return
-        }
+    }
         view.frame = bounds
         view.autoresizingMask = [.flexibleHeight , .flexibleHeight]
         addSubview(view)

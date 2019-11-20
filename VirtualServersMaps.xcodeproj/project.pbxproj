@@ -8,32 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		6044D18EE28CDF9D52E55B0C /* Pods_VirtualServersMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B625D7FB07B9C1FB58EC7FD /* Pods_VirtualServersMaps.framework */; };
+		D946E38C238556730080263D /* PolyLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D946E38B238556730080263D /* PolyLines.swift */; };
 		D9482D452371892E0015B918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D442371892E0015B918 /* AppDelegate.swift */; };
 		D9482D472371892E0015B918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D462371892E0015B918 /* SceneDelegate.swift */; };
-		D9482D492371892E0015B918 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D482371892E0015B918 /* ViewController.swift */; };
+		D9482D492371892E0015B918 /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9482D482371892E0015B918 /* MapsController.swift */; };
 		D9482D4C2371892E0015B918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4A2371892E0015B918 /* Main.storyboard */; };
 		D9482D4E237189340015B918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4D237189340015B918 /* Assets.xcassets */; };
 		D9482D51237189340015B918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9482D4F237189340015B918 /* LaunchScreen.storyboard */; };
+		D94E58CC237AF75000455080 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E58CB237AF75000455080 /* TabBarController.swift */; };
 		D953083C2378576A00CE562C /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953083B2378576A00CE562C /* DataBase.swift */; };
 		D9A15F5F23796D2800687EB0 /* GreenIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A15F5E23796D2800687EB0 /* GreenIcon.xib */; };
 		D9A15F6123796E1F00687EB0 /* GreenIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A15F6023796E1F00687EB0 /* GreenIcon.swift */; };
+		D9D2ACAC237C39160020B61A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D2ACAB237C39160020B61A /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21CF1023C3E778A30DD01B67 /* Pods-VirtualServersMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualServersMaps.release.xcconfig"; path = "Target Support Files/Pods-VirtualServersMaps/Pods-VirtualServersMaps.release.xcconfig"; sourceTree = "<group>"; };
 		3B625D7FB07B9C1FB58EC7FD /* Pods_VirtualServersMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualServersMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		976A5422DBD202892D630BF3 /* Pods-VirtualServersMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualServersMaps.debug.xcconfig"; path = "Target Support Files/Pods-VirtualServersMaps/Pods-VirtualServersMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		D946E38B238556730080263D /* PolyLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyLines.swift; sourceTree = "<group>"; };
 		D9482D412371892E0015B918 /* VirtualServersMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualServersMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9482D442371892E0015B918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9482D462371892E0015B918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9482D482371892E0015B918 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9482D482371892E0015B918 /* MapsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsController.swift; sourceTree = "<group>"; };
 		D9482D4B2371892E0015B918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9482D4D237189340015B918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9482D50237189340015B918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9482D52237189340015B918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94E58CB237AF75000455080 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D953083B2378576A00CE562C /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		D9A15F5E23796D2800687EB0 /* GreenIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreenIcon.xib; sourceTree = "<group>"; };
 		D9A15F6023796E1F00687EB0 /* GreenIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenIcon.swift; sourceTree = "<group>"; };
+		D9D2ACAB237C39160020B61A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +123,11 @@
 		D9482D5E23730C740015B918 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9482D482371892E0015B918 /* ViewController.swift */,
+				D9D2ACAB237C39160020B61A /* SplashViewController.swift */,
+				D94E58CB237AF75000455080 /* TabBarController.swift */,
+				D9482D482371892E0015B918 /* MapsController.swift */,
 				D953083B2378576A00CE562C /* DataBase.swift */,
+				D946E38B238556730080263D /* PolyLines.swift */,
 				D9A15F6023796E1F00687EB0 /* GreenIcon.swift */,
 			);
 			path = Model;
@@ -240,10 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9482D492371892E0015B918 /* ViewController.swift in Sources */,
+				D9482D492371892E0015B918 /* MapsController.swift in Sources */,
+				D946E38C238556730080263D /* PolyLines.swift in Sources */,
 				D9482D452371892E0015B918 /* AppDelegate.swift in Sources */,
 				D9A15F6123796E1F00687EB0 /* GreenIcon.swift in Sources */,
+				D94E58CC237AF75000455080 /* TabBarController.swift in Sources */,
 				D953083C2378576A00CE562C /* DataBase.swift in Sources */,
+				D9D2ACAC237C39160020B61A /* SplashViewController.swift in Sources */,
 				D9482D472371892E0015B918 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
