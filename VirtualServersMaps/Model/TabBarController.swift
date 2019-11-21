@@ -10,9 +10,10 @@ import UIKit
 
 final class TabBarController: UIViewController {
     
-    
-    
+    //        MARK: Variable
     var tabBar: UITabBarController!
+    
+    //        MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         creatTabBar()
@@ -20,6 +21,8 @@ final class TabBarController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    //        MARK: Functions
     func creatTabBar(){
         tabBar = UITabBarController()
         

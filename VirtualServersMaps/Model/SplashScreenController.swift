@@ -8,17 +8,15 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
-
+final class SplashViewController: UIViewController {
+    //        MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
        let seconds = 1.0
        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarController")
                 self.present(newViewController, animated: true, completion: nil)
-
        }
     }
 }

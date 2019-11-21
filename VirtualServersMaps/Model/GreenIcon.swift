@@ -10,6 +10,7 @@ import UIKit
 
 final class GreenIcon: UIView {
     
+    //    Mark: Life Cycle For Helper
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
